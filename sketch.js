@@ -152,7 +152,7 @@ function draw() {
     
       //Colonna 1
     push();
-    translate((3*width) / 4, frameCount);
+    translate((3*width) / 5, frameCount);
     noFill();
     let MyEllipse2 = lerpColor(
       color("#8383bc"),
