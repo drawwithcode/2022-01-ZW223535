@@ -149,6 +149,35 @@ function draw() {
 
     line(0, 0, 350, 350);
     pop();
+    
+      //Colonna 1
+    push();
+    translate((4*width) / 5, frameCount);
+    noFill();
+    let MyEllipse2 = lerpColor(
+      color("#8383bc"),
+      color("#33afc1"),
+      sin(frameCount)
+    );
+    strokeWeight(sin(frameCount));
+    stroke(MyEllipse2);
+    ellipse(0, 0, sin(frameCount) * 300);
+    pop();
+
+    //Colonna 2
+     push();
+    translate(width / 4, frameCount);
+    noFill();
+    let MyEllipse1 = lerpColor(
+      color("#33afc1"),
+      color("#8383bc"),
+      sin(frameCount)
+    );
+    strokeWeight(sin(frameCount));
+    stroke(MyEllipse1);
+    ellipse(0, 0, sin(frameCount) * 300);
+    pop();
+
 
     //Elemento al centro
 
